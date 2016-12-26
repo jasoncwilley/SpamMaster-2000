@@ -3,7 +3,7 @@ SpamMaster-2000  The Internet's #1 Source of Wasted Bandwith
 ----------------------------------------------------------------
 ________________________________________________________________
 App Details:  Twitter like web application written in Python 2.7 
-              and Flask.  Features include OAuth, User Profile
+              and Flask.  Features include User Auth, User Profile
               Creation, Pagination, Email Notifications, the 
               Ability to Follower other Users and much more...
 ________________________________________________________________
