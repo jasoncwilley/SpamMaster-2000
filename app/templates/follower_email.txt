@@ -1,9 +1,14 @@
+{{ _('SPAMMASTER -2000 THE INTERNET'S #1 SOURCE OF WASTED BANDWITH') }}
+
+
 {{ _('Dear %(nickname)s,', nickname=user.nickname) }}
 
-{{ _('%(nickname)s is now a follower. Click on the following link to visit %(nickname)s\'s profile page:', nickname=follower.nickname) }}
+{{ _('Check your rear-view... You are now being followed by %(nickname). Click on the following link to visit %(nickname)s\'s profile page:', nickname=follower.nickname) }}
 
 {{ url_for("user", nickname=follower.nickname, _external=True) }}
 
 {{ _('Regards,') }}
 
-{{ _('The microblog admin') }}
+{{ _('SirSpamAlot') }}
+{{ _('SpamMaster-2000 Admin') }}
+{{ _('Full Disclosure:  I am not only the Admin of SpamMaster-2000 but I am also a user.') }}
