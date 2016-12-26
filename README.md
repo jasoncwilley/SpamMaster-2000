@@ -1,17 +1,28 @@
-microblog
-=========
+----------------------------------------------------------------
+SpamMaster-2000  The Internet's #1 Source of Wasted Bandwith
+----------------------------------------------------------------
+________________________________________________________________
+App Details:  Twitter like web application written in Python 2.7 
+              and Flask.  Features include OAuth, User Profile
+              Creation, Pagination, Email Notifications, the 
+              Ability to Follower other Users and much more...
+________________________________________________________________
 
-A decently featured microblogging web application written in Python and Flask that I'm developing in my Flask Mega-Tutorial series that begins [here](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world).
+________________________________________________________________
+Installation:  1. Clone Repo
+               2. Create Virtual Enviroment (i.e. virtualenv) 
+               3. Install Requirements (requirements.txt file)
+               4. Ren db_create.py script  (python db.create.py)
+               5. Launch app on localhost:5000 (python run.py)
+_________________________________________________________________
 
-Installation
-------------
+_________________________________________________________________
+Credits:   This application would not have been possible without
+           open-source software and the following resources:
+           Official Flask Docs pocoo.org/projects/flask/#flask
+           StackOverFlow Q and A (rabbit holes)
+           Awesome, Inc. 2016 BootCamp Lectures
+           Flask Web Development by Michael Guelgrinberg
+_________________________________________________________________
 
-The tutorial referenced above explains how to setup a virtual environment with all the required modules.
- 
-The sqlite database must also be created before the application can run, and the `db_create.py` script takes care of that. See the [Database tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database) for the details.
-
-Running
--------
-
-To run the application in the development web server just execute `run.py` with the Python interpreter from the flask virtual environment.
 
