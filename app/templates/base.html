@@ -47,10 +47,10 @@
           </a>
           <a class="brand" href="{{ url_for('index') }}">SpamMaster-2000</a>
             <ul class="nav">
-              <li><a href="{{ url_for('index') }}">{{ _('Home') }}</a></li>
+              <li><a href="{{ url_for('index') }}"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=16&txt=Home" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=16&txt=Home'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=16&txt=Home';" alt="Home" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=16&txt=Home";</script></li>
               {% if g.user.is_authenticated %}
               <li><a href="{{ url_for('user', nickname=g.user.nickname) }}">{{ _('User Profile') }}</a></li>
-              <li><a href="{{ url_for('logout') }}">{{ _('SpamMaster-2000 Logout') }}</a></li>
+              <li><a href="{{ url_for('logout') }}">{{ _('Sp Logout') }}</a></li>
               {% endif %}
             </ul>
           <div class="nav-collapse collapse">
