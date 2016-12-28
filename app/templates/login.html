@@ -2,7 +2,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Don't feel like registering an Account?  SpamMaster.2000 (username) Password1@ (password)</h1>
     <script type="text/javascript">
     function set_openid(openid, pr)
     {
@@ -22,6 +21,7 @@
         <form class="form" action="" method="post" name="login">
             {{ form.hidden_tag() }}
             <div class="help-block">{{ _('Enter your Yahoo or Aol User ID and Click on the Icon Below:') }}</div>
+            <div class="help-block">{{ _('If You Do Not Have a Yahoo or Aol Account then Use Ours. Click Yahoo! and Use the following to login: SpamMaster.2000 (username) Password1@ (password)')}}</div>
             <div class="control-group">
                 {% for pr in providers %}
                 <a href="javascript:set_openid('{{ pr.url }}', '{{ pr.name }}');"><img src="/static/img/{{ pr.name.lower() }}.png" class="img-polaroid" style="margin:2px;" /></a>
@@ -45,7 +45,7 @@
             </div>
             <div class="control-group">
                 <div class="controls">
-                    <input class="btn btn-primary" type="submit" value="{{ _('Sign In') }}">
+                    <input class="btn btn-danger btn-lg" type="submit" value="{{ _('Sign In') }}">
                 </div>
             </div>
         </form>
