@@ -1,4 +1,4 @@
-{{ _('SPAMMASTER -2000 THE INTERNET'S #1 SOURCE OF WASTED BANDWITH') }}
+{{ _('SPAMMASTER -2000 THE INTERNETS #1 SOURCE OF WASTED BANDWITH') }}
 
 
 {{ _('Dear %(nickname)s,', nickname=user.nickname) }}
