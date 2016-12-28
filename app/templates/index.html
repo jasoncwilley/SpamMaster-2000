@@ -10,15 +10,15 @@
             <div class="control-group{% if form.post.errors %} error{% endif %}">
                 <label class="control-label" for="post">{{ _('Got something pointless to share?') }}</label>
                 <div class="controls">
-                    {{ form.post(size=30, maxlength=140) }}
+                    {{ form.post(size=60, maxlength=140) }}
                     {% for error in form.post.errors %}
-                        <span class="help-inline">[{{ error }}]</span>
+                        <span class="help-inline">[{{ error }}]</span><br>
                     {% endfor %}
                 </div>
             </div>
             <div class="control-group">
                 <div class="controls">
-                    <input type="submit" class="btn btn-danger btn-large active" value="{{ _('Post it Now!!!') }}">
+                    <input class="btn btn-primary" type="submit" value="{{ _('Post it Now!!!') }}">
                 </div>
             </div>
         </form>
@@ -28,14 +28,14 @@
     {% endfor %}
     <ul class="pager">
         {% if posts.has_prev %}
-        <li class="previous"><a href="{{ url_for('index', page=posts.prev_num) }}"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Newer%20Spam" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Newer%20Spam'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Newer%20Spam';" alt="Newer%20Spam" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Newer%20Spam";</script></li>
+        <li class="previous"><a href="{{ url_for('index', page=posts.prev_num) }}">{{ _('Newer posts') }}</a></li>
         {% else %}
-        <li class="previous disabled"><a href="{{ url_for('index', page=posts.prev_num) }}"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Newer%20Spam" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Newer%20Spam'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Newer%20Spam';" alt="Newer%20Spam" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Newer%20Spam";</script><</li>
+        <li class="previous disabled"><a href="#">{{ _('Newer posts') }}</a></li>
         {% endif %}
         {% if posts.has_next %}
-        <li class="next"><a href="{{ url_for('index', page=posts.next_num) }}"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Older%20Spam" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Older%20Spam'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Older%20Spam';" alt="Older%20Spam" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Older%20Spam";</script></li>
+        <li class="next"><a href="{{ url_for('index', page=posts.next_num) }}">{{ _('Older posts') }}</a></li>
         {% else %}
-        <li class="next disabled"><a href="{{ url_for('index', page=posts.next_num) }}"><img style="border:0px;" src="http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Older%20Spam" onmouseover="this.src='http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Older%20Spam'" onmouseout="this.src='http://images.webestools.com/buttons.php?frm=1&btn_type=13&txt=Older%20Spam';" alt="Older%20Spam" /></a><script type="text/javascript">img=new Image();img.src= "http://images.webestools.com/buttons.php?frm=2&btn_type=13&txt=Older%20Spam";</script></li>
+        <li class="next disabled"><a href="#">{{ _('Older posts') }}</a></li>
         {% endif %}
     </ul>
 {% endblock %}
